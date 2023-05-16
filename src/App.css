@@ -1,38 +1,120 @@
-.App {
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+nav {
+  background-color: #606c38;
+  color: white;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.header >a{
+  text-decoration: none;
+  color: black;
+  margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
-.App-header {
-  background-color: #282c34;
+.container {
+  background-color: #e9edc9;
+  width: 70%;
+  margin:auto;
   min-height: 100vh;
+  padding: 8vmax;
+  box-sizing: border-box;
+}
+
+.container > form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.container > h2{
+  text-align: center;
+  margin: 30px;
+  font-size: 1.6erm;
+}
+
+input,
+textarea,
+button {
+  padding: 15px;
+  border: 1px solid rgba(0,0,0,0.214);
+  margin: 10px 0px;
+  font-size: 1.2erm;
+  border-radius: 5px;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  background-color: rgb(37, 36, 36);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.task{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin:10px 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task span{
+  color: rgb(58, 57, 57);
 }
+
+.task >div{
+  width:100%;
+}
+
+.task >button{
+  display: flex;
+  border-radius:100% ;
+  height: 30px;
+  width: 30px;
+  font-size: 1.6rem;
+justify-content: center;
+align-items: center;
+}
+
+.task >button:hover{
+  background-color: rgb(255, 0, 0);
+}
+
+.contact{
+  background-color: crimson;
+  width: 100%;
+  height: 100vh;
+}
+
+.about{
+  background-color: yellow;
+  width: 100%;
+  height: 100vh;
+}
+
+footer{
+  background-color: rgb(30,30,30);
+  height: 100px;;
+  color: white;
+}
+
+.User{
+  background-color: rgb(49, 7, 83);
+  width: 100%;
+  height: 100vh;
+}
+
+
